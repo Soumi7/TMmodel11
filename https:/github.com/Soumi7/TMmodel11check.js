@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
 <div>Teachable Machine Pose Model</div>
 <button type="button" onclick="init()">Start</button>
 <div><canvas id="canvas"></canvas></div>
@@ -9,7 +12,7 @@
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "https://teachablemachine.withgoogle.com/models/GRg2iYiD1/";
+    const URL = "./my_model/";
     let model, webcam, ctx, labelContainer, maxPredictions;
 
     async function init() {
@@ -75,3 +78,5 @@
         }
     }
 </script>
+</body>
+</html>
